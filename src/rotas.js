@@ -12,6 +12,8 @@ rotas.delete('/instrutores/:id', instrutores.deletarInstrutor);
 
 
 rotas.get('/aulas', aulas.listarAulas);
+rotas.get('/aulas/:id', aulas.obterAula);
 rotas.post('/instrutores/:idInstrutor/aulas', aulas.cadastrarAula);
+rotas.get('/instrutores/:idInstrutor/aulas', aulas.obterAulasInstrutor);
 
 module.exports = rotas;
